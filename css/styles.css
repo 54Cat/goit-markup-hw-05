@@ -127,10 +127,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-txt);
-
-  transition-property: color, background-color, box-shadow;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover,
@@ -165,10 +161,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-txt);
-
-  transition-property: color, background-color, box-shadow;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-icon {
@@ -185,10 +177,6 @@ img {
 
 .current {
   color: var(--accent-txt);
-
-  transition-property: color, background-color, box-shadow;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current::after {
@@ -250,10 +238,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--light-txt);
   opacity: 0.6;
-
-  transition-property: color, background-color, box-shadow;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail:hover,
@@ -298,10 +282,6 @@ img {
   height: 22px;
   fill: var(--accent-icon);
   opacity: 1;
-
-  transition-property: color, background-color, box-shadow;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
@@ -346,7 +326,7 @@ img {
   background-color: var(--secondary-bg);
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bg-hero.png);
+    url(../images/bg-hero-progressive.jpeg);
 
   background-position: center;
   background-size: cover;
@@ -380,7 +360,7 @@ img {
   background-color: var(--main-btn-bg);
   cursor: pointer;
 
-  transition-property: color, background-color, box-shadow;
+  transition-property: background-color;
   transition-duration: var(--time-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -539,7 +519,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  transition-property: color, background-color, box-shadow;
+  transition-property: background-color;
   transition-duration: var(--time-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -549,7 +529,7 @@ img {
   height: 22px;
   fill: var(--primary-icon);
 
-  transition-property: color, background-color, box-shadow;
+  transition-property: fill;
   transition-duration: var(--time-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -586,7 +566,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  transition-property: color, background-color, box-shadow;
+  transition-property: border-color;
   transition-duration: var(--time-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -607,7 +587,7 @@ img {
   cursor: pointer;
   fill: var(--primary-icon);
 
-  transition-property: color, background-color, box-shadow, fill;
+  transition-property: fill;
   transition-duration: var(--time-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -696,10 +676,6 @@ img {
 
 .works-link {
   display: block;
-
-  transition-property: color, background-color, box-shadow;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works-link:hover,
@@ -767,11 +743,9 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition-property: color,
-  background-color,
-  box-shadow;
+  transition-property: opacity, visibility ;
   transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .backdrop.is-hidden {
@@ -787,7 +761,7 @@ img {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  background: #ffffff;
+  background: var(--primary-bg);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 0px 1px 1px rgba(0, 0, 0, 0.14),
 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -800,7 +774,7 @@ border-radius: 4px;
   right: 8px;
   width: 30px;
   height: 30px;
-  background: #ffffff;
+  background: var(--primary-bg);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
