@@ -32,6 +32,7 @@
 
   /**/
   --time-duration: 250ms;
+  --time-fun: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -60,10 +61,6 @@ p:last-child {
 .link {
   text-decoration: none;
   position: relative;
-
-  transition-property: color, background-color, box-shadow;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list {
@@ -127,6 +124,10 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-txt);
+
+  transition-property: color;
+  transition-duration: var(--time-duration);
+  transition-timing-function: var(--time-fun);
 }
 
 .header-nav-link:hover,
@@ -161,6 +162,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-txt);
+
+  transition-property: color;
+  transition-duration: var(--time-duration);transition-timing-function: var(--time-fun);
 }
 
 .contacts-icon {
@@ -238,6 +242,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--light-txt);
   opacity: 0.6;
+
+  transition-property: color;
+  transition-duration: var(--time-duration);
+  transition-timing-function: var(--time-fun);
 }
 
 .footer-mail:hover,
@@ -282,6 +290,9 @@ img {
   height: 22px;
   fill: var(--accent-icon);
   opacity: 1;
+
+  transition-property: background-color;
+  transition-duration: var(--time-duration);transition-timing-function: var(--time-fun);
 }
 
 .footer-social-link:hover,
@@ -326,7 +337,7 @@ img {
   background-color: var(--secondary-bg);
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bg-hero-progressive.jpeg);
+    url(../images/bg-hero.png);
 
   background-position: center;
   background-size: cover;
@@ -361,8 +372,7 @@ img {
   cursor: pointer;
 
   transition-property: background-color;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--time-duration);transition-timing-function: var(--time-fun);
 }
 
 .main-btn:hover,
@@ -520,8 +530,7 @@ img {
   align-items: center;
 
   transition-property: background-color;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--time-duration);transition-timing-function: var(--time-fun);
 }
 
 .social-icon {
@@ -530,8 +539,7 @@ img {
   fill: var(--primary-icon);
 
   transition-property: fill;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--time-duration);transition-timing-function: var(--time-fun);
 }
 
 .social-link:hover .social-icon,
@@ -567,13 +575,12 @@ img {
   align-items: center;
 
   transition-property: border-color;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--time-duration);transition-timing-function: var(--time-fun);
 }
 
 .clients-item:hover,
 .clients-item:focus {
-  fill: var(--hover-icon-bg);
+  /* fill: var(--hover-icon-bg); */
   border-color: var(--hover-icon-bg);
 }
 
@@ -588,8 +595,7 @@ img {
   fill: var(--primary-icon);
 
   transition-property: fill;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--time-duration);transition-timing-function: var(--time-fun);
 }
 
 .clients-logo-icon {
@@ -599,7 +605,7 @@ img {
 .clients-link:focus,
 .clients-link:hover {
   fill: var(--hover-icon-bg);
-  border-color: var(--hover-icon-bg);
+  /* border-color: var(--hover-icon-bg); */
 }
 
 /* страница Портфолио*/
@@ -628,8 +634,7 @@ img {
   cursor: pointer;
 
   transition-property: color, background-color, box-shadow;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--time-duration);transition-timing-function: var(--time-fun);
 }
 
 .filter-btn:hover,
@@ -676,6 +681,9 @@ img {
 
 .works-link {
   display: block;
+
+  transition-property: box-shadow;
+  transition-duration: var(--time-duration);transition-timing-function: var(--time-fun);
 }
 
 .works-link:hover,
@@ -708,8 +716,7 @@ img {
   padding: 63px 24px;
   transform: translateY(100%);
   transition: transform;
-  transition-duration: var(--time-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--time-duration);transition-timing-function: var(--time-fun);
 }
 
 .works-link:hover .works-descr,
@@ -733,7 +740,6 @@ img {
   color: var(--secondary-txt);
 }
 
-
 /* модальное окно */
 .backdrop {
   position: fixed;
@@ -745,7 +751,7 @@ img {
 
   transition-property: opacity, visibility ;
   transition-duration: var(--time-duration);
- transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-timing-function: var(--time-fun);
  }
 
 .backdrop.is-hidden {
