@@ -283,6 +283,10 @@ img {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+
+  transition-property: background;
+  transition-duration: var(--time-duration);
+  transition-timing-function: var(--time-fun);
 }
 
 .footer-social-icon {
